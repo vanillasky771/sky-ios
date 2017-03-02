@@ -14,6 +14,7 @@
 		81C5D9431E67A8FC003057BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C5D9411E67A8FC003057BA /* LaunchScreen.storyboard */; };
 		81C5D94E1E67A8FC003057BA /* SkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5D94D1E67A8FC003057BA /* SkyTests.swift */; };
 		81C5D9591E67A8FC003057BA /* SkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5D9581E67A8FC003057BA /* SkyUITests.swift */; };
+		81C5D9671E67C152003057BA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5D9661E67C152003057BA /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		81C5D9541E67A8FC003057BA /* SkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C5D9581E67A8FC003057BA /* SkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyUITests.swift; sourceTree = "<group>"; };
 		81C5D95A1E67A8FC003057BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C5D9661E67C152003057BA /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				81C5D93F1E67A8FC003057BA /* Assets.xcassets */,
 				81C5D9411E67A8FC003057BA /* LaunchScreen.storyboard */,
 				81C5D9441E67A8FC003057BA /* Info.plist */,
+				81C5D9661E67C152003057BA /* Utility.swift */,
 			);
 			path = Sky;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					81C5D9341E67A8FC003057BA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8XUSSZPKN;
 						ProvisioningStyle = Automatic;
 					};
 					81C5D9481E67A8FC003057BA = {
@@ -261,6 +265,7 @@
 			files = (
 				81C5D93B1E67A8FC003057BA /* ViewController.swift in Sources */,
 				81C5D9391E67A8FC003057BA /* AppDelegate.swift in Sources */,
+				81C5D9671E67C152003057BA /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +417,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E8XUSSZPKN;
 				INFOPLIST_FILE = Sky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Sky.Sky;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sky.WhoAmI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,9 +431,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E8XUSSZPKN;
 				INFOPLIST_FILE = Sky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Sky.Sky;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sky.WhoAmI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
